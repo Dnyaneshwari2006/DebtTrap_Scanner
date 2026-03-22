@@ -1,0 +1,18 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  flex: 1;
+  min-height: calc(100vh - 64px);
+}
+
+@media (max-width: 800px) {
+  .app-body {
+    grid-template-columns: 1fr;
+  }
+}

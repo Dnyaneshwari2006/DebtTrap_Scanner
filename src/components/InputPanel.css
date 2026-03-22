@@ -1,0 +1,179 @@
+.input-panel {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.section {
+  margin-bottom: 1.75rem;
+}
+
+.section-label {
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.field input,
+.mini-input {
+  width: 100%;
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-size: 14px;
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  outline: none;
+  transition: border 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.field input::placeholder,
+.mini-input::placeholder {
+  color: var(--muted);
+}
+
+.field input:focus,
+.mini-input:focus {
+  border-color: var(--accent);
+  background: var(--bg2);
+  box-shadow: 0 0 0 3px rgba(124, 111, 247, 0.18);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.mini-input {
+  padding: 8px 11px;
+  font-size: 13px;
+  border-radius: 9px;
+}
+
+.loan-tags {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 24px;
+  margin-bottom: 4px;
+  gap: 4px;
+}
+
+.loan-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(135deg, #312060, #3d1a40);
+  border: 1px solid #6b3a9a;
+  border-radius: 20px;
+  padding: 3px 10px 3px 12px;
+  font-size: 11px;
+  color: #c4b5fd;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.loan-tag-rm {
+  color: var(--accent2);
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 2px;
+  transition: color 0.2s;
+}
+
+.loan-tag-rm:hover {
+  color: #fb7185;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 9px;
+  background: transparent;
+  border: 1.5px dashed var(--border2);
+  border-radius: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: all 0.2s;
+  margin-top: 8px;
+}
+
+.add-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(124, 111, 247, 0.08);
+}
+
+.scan-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.01em;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.45);
+  margin-top: auto;
+}
+
+.scan-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(79, 70, 229, 0.6);
+}
+
+.scan-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 800px) {
+  .input-panel {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}

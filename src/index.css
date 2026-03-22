@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f0e0e;
+  --bg2: #181615;
+  --surface: #1e1b18;
+  --surface2: #252220;
+  --border: #2e2a26;
+  --border2: #403a34;
+  --accent: #e53e2f;
+  --accent2: #d97706;
+  --accent3: #22a87a;
+  --text: #f0ece4;
+  --text2: #a09890;
+  --muted: #6b6560;
+  --danger: #f4614f;
+  --warning: #f59e0b;
+  --safe: #34d399;
+  --card-red-bg: #1f1512;
+  --card-red-border: #4a1f1a;
+  --card-amber-bg: #1e1810;
+  --card-amber-border: #4a3510;
+  --card-green-bg: #111d18;
+  --card-green-border: #1a3d2e;
+  --card-neutral-bg: #181615;
+  --card-neutral-border: #2e2a26;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] { -moz-appearance: textfield; }
