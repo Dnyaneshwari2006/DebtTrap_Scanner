@@ -1,0 +1,19 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 1;
+}
+
+.app-content {
+  flex: 1;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: transparent;
+  animation: fadeIn 0.4s ease;
+}
+
+@media (max-width: 800px) {
+  .app { flex-direction: column; }
+}

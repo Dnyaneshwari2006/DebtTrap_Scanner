@@ -1,0 +1,47 @@
+.header {
+  background: linear-gradient(135deg, #071a18 0%, #0b1a28 50%, #071220 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 30%, var(--accent3) 70%, transparent 100%);
+  animation: shimmer 4s linear infinite;
+  background-size: 200% 100%;
+}
+.header-left {
+  display: flex; align-items: center; gap: 10px;
+  animation: slideInL 0.5s ease;
+}
+.header-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  animation: pulseDot 2s ease-in-out infinite;
+}
+.header-logo {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header-tagline {
+  font-size: 12px;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  letter-spacing: 0.05em;
+  animation: fadeIn 0.8s ease;
+}
