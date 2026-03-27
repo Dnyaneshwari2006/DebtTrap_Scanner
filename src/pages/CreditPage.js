@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Filler, Tooltip, RadialLinearScale } from 'chart.js';
-import { Line, Radar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import './CreditPage.css';
 import './Page.css';
 
